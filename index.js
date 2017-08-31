@@ -16,6 +16,10 @@ app.get('/', (request, response) => {
   })
 })
 
+app.post('/', (request, response) => {
+  console.log(request.body)
+})
+
 app.use('/api', router)
 
 app.listen(8080, () => {
